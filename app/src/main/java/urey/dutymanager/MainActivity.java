@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AdapterView.OnItemClickListener, AdapterView.OnItemSelectedListener{
     String[] periods;
     String[] addrem = {"Добавить", "Удалить", "Отмена"};
-    String[] delcon = {"Да", "Нет"};
+    String[] delcon = {"Да", "Нет", "Отмена"};
     final int DIALOG_ADDPERIOD = 1;
     final int DIALOG_ADDTYPE = 2;
     final int DIALOG_DELCONSIST = 3;
