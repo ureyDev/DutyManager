@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_choose">Выберите операцию</string>
+    <string name="oper_add">Добавить</string>
+    <string name="oper_rem">Удалить</string>
+    <string name="oper_cancel">Отмена</string>
+
+    <string name="title_error">Ошибка!</string>
+    <string name="mes_name_empty">Введите имя пользователя!</string>
+    <string name="mes_pass_incorrect">Проверьте правильность пароля и повторите попытку!</string>
+
+    <string name="main_group">Группа</string>
+    <string name="main_people">Люди</string>
+    <string name="main_name">Имя</string>
+    <string name="main_duty">Долг</string>
+    <string name="main_payed">Уплачено</string>
+
+    <color name="colorMainBckg">#cfcbcc</color>
+</resources>

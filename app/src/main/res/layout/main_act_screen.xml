@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a8ccd">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/periodSpinner"
+            android:layout_weight="2"
+            android:textColor="#ffffff"
+            android:background="#aad4ec"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+/-"
+            android:id="@+id/btnAddPeriod"
+            android:layout_gravity="center_vertical"
+            android:onClick="onClick"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:background="#aad4ec"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/typeSpinner"
+            android:layout_weight="2"
+            android:background="#aad4ec"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+/-"
+            android:id="@+id/btnAddType"
+            android:layout_gravity="center_vertical"
+            android:onClick="onClick"
+            android:textColor="#000000"
+            android:background="#aad4ec"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8958d2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Участники"
+                android:id="@+id/textView10"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/btnAddMember"
+                    android:onClick="onClick"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:id="@+id/btnDelMember"
+                    android:nestedScrollingEnabled="false"
+                    android:onClick="onClick"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ed9b5d">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Состав"
+                android:id="@+id/textView11"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/btnAddConsist"
+                    android:onClick="onClick"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:id="@+id/btnDelConsist"
+                    android:nestedScrollingEnabled="false"
+                    android:onClick="onClick"
+                    android:layout_weight="1"
+                    android:layout_marginRight="0dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:layout_column="0"
+            android:text="name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500000"
+            android:id="@+id/textView13"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:contextClickable="true"
+            android:clickable="true"
+            android:numeric="decimal"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000000"
+            android:id="@+id/textView14"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:numeric="decimal"
+            android:layout_column="2" />
+    </TableRow>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvConsist"
+        android:fastScrollEnabled="false"
+        android:clickable="true"
+        android:listSelector="@drawable/consist_selector"
+        android:layout_weight="3" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Редактировать"
+            android:id="@+id/btnMEdit"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:onClick="onClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выход"
+            android:id="@+id/btnMExit"
+            android:layout_weight="0"
+            android:layout_margin="5dp"
+            android:onClick="onClick" />
+    </TableRow>
+
+</LinearLayout>
